@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Spicy+Rice&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --fonte-destaque:"Spicy Rice", serif;
+    --fonte-txto:"Bebas Neue", sans-serif;
+    --cor-um: #0a0908ff;
+    --cor-dois: #22333bff;
+    --cor-tres: #eae0d5ff;
+    --cor-quatro:#c6ac8f;
+    --cor-cinco:#5e503f;
+    --cor-seis: #6f1d1bff;
+    --cor-sete: #bb9457ff;
+    --cor-oito: #432818ff;
+    --cor-nove: #99582aff;
+    --cor-dez: #ffe6a7ff;
+}
+
+body{
+    background-color: var(--cor-cinco);
+    font-family: var(--fonte-texto);
+}   
+
+footer{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--cor-quatro);
+    padding: 1em;
+}
+
+footer p{
+    font-size: 1.1rem;
+    color: var(--cor-tres);
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--cor-um);
+}
