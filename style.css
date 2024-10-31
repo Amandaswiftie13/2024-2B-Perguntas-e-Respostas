@@ -25,6 +25,66 @@ body{
     font-family: var(--fonte-texto);
 }   
 
+#caixa{
+    display: flex;
+}
+
+.caixa{
+    margin: 1rem;
+    background-color: var(--cor-dois);
+    height: 203rem;
+    flex-grow: 1;
+    flex-basis: calc(33% - 6rem);
+}
+
+.cartao__conteudo{
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
+}
+
+.cartao:hover .cartao__conteudo{
+    transform: rotateY(180deg);
+}
+
+.cartao__conteudo h3{
+    border: 2px solid var(--cor-dez);
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    padding: 0 6rem;
+    position: absolute;
+    margin: 0.6em;
+    border-radius: 0.6rem;
+    font-size: 1.5rem;
+    backface-visibility: hidden;
+}
+
+.cartao__conteudo__pergunta{
+    font-size: 1.5rem;
+    margin: 2.5rem;
+}
+
+.cartao__conteudo__pergunta
+.cartao__conteudo__resposta{
+    backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.cartao__conteudo p {
+    margin: 1rem;
+    padding: 1.3rem;
+}
+
+.cartao__conteudo__resposta{
+    font-size: 1.5rem;
+    transform: rotateY(180deg);
+}
+
 footer{
     text-align: center;
     position: fixed;
