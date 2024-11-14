@@ -1,20 +1,20 @@
-function CriaCarta(materia, pergunta, resposta){
-    let caixa = document.gesElementBy('caixa')
+function criaCartao(materia, pergunta, resposta){
+    let caixa = document.getElementById('caixa')
     let cartao = document.createElement('article')
 
     cartao.className = 'cartao'
 
     cartao.innerHTML = `
-   <div class="cartao__conteudo">
-      <h3>  </h3>
-    <div class="cartao__conteudo__pergunta">
-    <p> Em que ano aconteceu a Revolução Francesa? </p>                        
+    <div class="cartao__conteudo">
+        <h3> ${materia} </h3>
+        <div class="cartao__conteudo__pergunta">
+            <p> ${pergunta} </p>                        
+        </div>
+        <div class="cartao__conteudo__resposta">
+            <p> ${resposta} </p>
+        </div>
     </div>
-    <div class="cartao__conteudo__resposta">
-         <p> Em 1789 </p>
-  </div>
-  </div>
-  `
+    `
 
- caixa.appeendChild(cartao)
+    caixa.appendChild(cartao)
 }

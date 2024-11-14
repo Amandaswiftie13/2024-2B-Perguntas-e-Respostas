@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Spicy+Rice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Danfo&display=swap');
 
 *{
     margin: 0;
@@ -6,33 +6,37 @@
 }
 
 :root{
-    --fonte-destaque:"Spicy Rice", serif;
-    --fonte-txto:"Bebas Neue", sans-serif;
-    --cor-um: #0a0908ff;
-    --cor-dois: #22333bff;
-    --cor-tres: #eae0d5ff;
-    --cor-quatro:#c6ac8f;
-    --cor-cinco:#5e503f;
+    --fonte-destaque: "Danfo", serif;
+    --fonte-texto: "Arima", serif;
+    --cor-um: #335c67ff;
+    --cor-dois: #fff3b0ff;
+    --cor-tres: #e09f3eff;
+    --cor-quatro: #9e2a2bff;
+    --cor-cinco: #540b0eff;
     --cor-seis: #6f1d1bff;
     --cor-sete: #bb9457ff;
-    --cor-oito: #432818ff;
-    --cor-nove: #99582aff;
-    --cor-dez: #ffe6a7ff;
+    --cor-nove: #432818ff;
+    --cor-dez: #99582aff;
+       
 }
 
 body{
-    background-color: var(--cor-cinco);
+    background-color: var(--cor-sete);
     font-family: var(--fonte-texto);
-}   
+}
 
 #caixa{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4rem;
+    gap: 2rem;
 }
 
-.caixa{
+.cartao{
     margin: 1rem;
     background-color: var(--cor-dois);
-    height: 203rem;
+    height: 20rem;
     flex-grow: 1;
     flex-basis: calc(33% - 6rem);
 }
@@ -51,23 +55,25 @@ body{
 }
 
 .cartao__conteudo h3{
-    border: 2px solid var(--cor-dez);
-    font-family: var(--fonte-destaque);
+    border: 2px solid var(--cor-quatro);
+    color: var(--cor5);
+    font-family: var(--fonte-texto);
     text-align: center;
-    padding: 0 6rem;
+    padding: 0.5rem;
     position: absolute;
-    margin: 0.6em;
+    margin: 0.6rem;
     border-radius: 0.6rem;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     backface-visibility: hidden;
 }
 
 .cartao__conteudo__pergunta{
+margin-top: 2em;
     font-size: 1.5rem;
     margin: 2.5rem;
 }
 
-.cartao__conteudo__pergunta
+.cartao__conteudo__pergunta,
 .cartao__conteudo__resposta{
     backface-visibility: hidden;
     position: absolute;
@@ -90,16 +96,16 @@ footer{
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: var(--cor-quatro);
+    background-color: var(--cor-dez);
     padding: 1em;
 }
 
 footer p{
-    font-size: 1.1rem;
-    color: var(--cor-tres);
+    font-size: 1.2rem;
+    color: var(--cor-cinco);
 }
 
 footer a{
     text-decoration: none;
-    color: var(--cor-um);
+    color: var(--cor-nove);
 }
